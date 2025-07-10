@@ -9,11 +9,6 @@ sqlite = "sqlite3"
 defaultdb = "lahman.db"
 # If you're on windows/older versions of mac we'll use
 # the sqlite file in your proj1 directory
-for name in ('sqlite', 'sqlite3', 'sqlite3.exe'):
-    if os.path.exists(name):
-        sqlite = "./" + name
-        print("Using `{}` to run tests.".format(sqlite))
-        break
 
 queries = [
     ("SELECT * FROM q0;", "q0"),
